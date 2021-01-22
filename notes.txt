@@ -3,3 +3,6 @@ interpolation ---- sending data from app-component.ts to app.component.html --we
 
 //create a component
 ng g c component-name
+
+//create a module 
+ng g m module-name

@@ -13,6 +13,11 @@
 <button (click)="getValue(box.value)">Get Value</button>
 <p>My name is {{ currentVal }}</p>
 <br /><br />
+
+<h1>Property Binding</h1>
+<input type="text" [value]="name" />
+
+<br /><br />
 <button (click)="getAlert('Krishna')">Get Alert</button>
 <app-users-list></app-users-list>
 <app-login></app-login>
