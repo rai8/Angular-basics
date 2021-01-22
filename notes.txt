@@ -1,0 +1,1 @@
+interpolation ---- sending data from app-component.ts to app.component.html --we use {{}}
