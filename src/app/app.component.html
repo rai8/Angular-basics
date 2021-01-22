@@ -4,7 +4,15 @@
 <p>{{ getName() }}</p>
 <p>{{ obj.name }} of age {{ obj.age }}</p>
 <p>{{ arr }}</p>
-
+<br /><br />
+<h2>Get Input value</h2>
+<!-- <input type="text" (keyup)="getValue($event.target.value)" />
+<p>My name is {{ currentVal }}</p>
+<br /><br /> -->
+<input type="text" #box />
+<button (click)="getValue(box.value)">Get Value</button>
+<p>My name is {{ currentVal }}</p>
+<br /><br />
 <button (click)="getAlert('Krishna')">Get Alert</button>
 <app-users-list></app-users-list>
 <app-login></app-login>

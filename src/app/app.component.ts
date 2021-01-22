@@ -9,7 +9,14 @@ export class AppComponent {
   title = 'beginner';
   name = 'Krishna Praisley';
   siteUrl = window.location.href; //get site url
+  currentVal = '';
   //using with functions
+
+  getValue(val) {
+    console.log(val);
+    this.currentVal = val;
+  }
+
   getName() {
     return 'Shinskey ' + this.name;
   }
