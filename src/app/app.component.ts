@@ -9,10 +9,12 @@ export class AppComponent {
   title = 'beginner';
   name = 'Krishna Praisley';
   siteUrl = window.location.href; //get site url
-
   //using with functions
   getName() {
     return 'Shinskey ' + this.name;
+  }
+  getAlert(name) {
+    alert(name);
   }
 
   //using with objects
