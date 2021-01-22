@@ -1,1 +1,5 @@
 interpolation ---- sending data from app-component.ts to app.component.html --we use {{}}
+
+
+//create a component
+ng g c component-name
