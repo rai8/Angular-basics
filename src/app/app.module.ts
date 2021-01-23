@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { UsersListComponent } from './users-list/users-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, UsersListComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, UsersModule],
+  imports: [BrowserModule, AppRoutingModule, UsersModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
