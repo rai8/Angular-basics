@@ -6,3 +6,6 @@ button,
 input {
   padding: 15px;
 }
+.card {
+  display: flex;
+}

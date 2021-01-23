@@ -7,9 +7,10 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UserCompoComponent } from './user-compo/user-compo.component';
 
 @NgModule({
-  declarations: [AppComponent, UsersListComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, UsersListComponent, HeaderComponent, FooterComponent, UserCompoComponent],
   imports: [BrowserModule, AppRoutingModule, UsersModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],

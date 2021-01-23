@@ -91,5 +91,13 @@
 
   <app-login></app-login>
   <app-signup></app-signup>
+
+  <br /><br />
+  <h1><u>Woriking with passing Data from Parent to child</u></h1>
+  <!-- <app-user-compo [hero]="parentData" [info]="dataForChild"></app-user-compo> -->
+  <!-- <app-user-compo [hero]="dataForChild"></app-user-compo> -->
+  <div class="card" *ngFor="let data of dataComplex">
+    <app-user-compo [hero]="data"></app-user-compo>
+  </div>
 </div>
 <app-footer></app-footer>

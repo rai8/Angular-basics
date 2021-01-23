@@ -13,6 +13,7 @@ export class AppComponent {
   default = true;
   siteUrl = window.location.href; //get site url
   currentVal = '';
+  parentData = 'bruce';
   //using with functions
   updateColor() {
     this.default = !this.default;
@@ -34,7 +35,10 @@ export class AppComponent {
     name: 'Kelly',
     age: 20,
   };
-
+  dataForChild = {
+    name: 'Krishna Naile',
+    email: 'kwiw@gmail.com',
+  };
   //using with arrays
   arr = ['Peter', 'Kelly', 'Simon'];
   data = ['anil', 'bruce', 'krayla', 'sekna'];
