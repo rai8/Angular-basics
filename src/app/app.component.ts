@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'beginner';
   name = 'Krishna Praisley';
+  show = 'green';
+  color = 'saldin';
   siteUrl = window.location.href; //get site url
   currentVal = '';
   //using with functions
@@ -32,4 +34,11 @@ export class AppComponent {
 
   //using with arrays
   arr = ['Peter', 'Kelly', 'Simon'];
+  data = ['anil', 'bruce', 'krayla', 'sekna'];
+  dataComplex = [
+    { name: 'Ryton', age: 22 },
+    { name: 'Pasley', age: 18 },
+    { name: 'Krishna', age: 17 },
+    { name: 'Salhadh', age: 25 },
+  ];
 }
