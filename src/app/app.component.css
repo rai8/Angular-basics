@@ -1,3 +1,7 @@
+.container {
+  margin-left: 80px;
+}
+
 button,
 input {
   padding: 15px;

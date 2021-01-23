@@ -1,31 +1,33 @@
-<h1>Hello World</h1>
-<h3>{{ title }}- {{ siteUrl }}</h3>
-<p>{{ name }}</p>
-<p>{{ getName() }}</p>
-<p>{{ obj.name }} of age {{ obj.age }}</p>
-<p>{{ arr }}</p>
+<app-header></app-header>
+<div class="container">
+  <h1>Hello World</h1>
+  <h3>{{ title }}- {{ siteUrl }}</h3>
+  <p>{{ name }}</p>
+  <p>{{ getName() }}</p>
+  <p>{{ obj.name }} of age {{ obj.age }}</p>
+  <p>{{ arr }}</p>
 
-<br /><br />
-<h1>Working with For Loops</h1>
-<div>
-  <p *ngFor="let item of data">{{ item }}</p>
-</div>
-<div>
-  <table border="1">
-    <tr>
-      <td>Name</td>
-      <td>Age</td>
-    </tr>
-    <tr *ngFor="let item of dataComplex">
-      <td>{{ item.name }}</td>
-      <td>{{ item.age }}</td>
-    </tr>
-  </table>
-</div>
+  <br /><br />
+  <h1>Working with For Loops</h1>
+  <div>
+    <p *ngFor="let item of data">{{ item }}</p>
+  </div>
+  <div>
+    <table border="1">
+      <tr>
+        <td>Name</td>
+        <td>Age</td>
+      </tr>
+      <tr *ngFor="let item of dataComplex">
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+      </tr>
+    </table>
+  </div>
 
-<br /><br />
-<h1>Conditional rendering</h1>
-<!-- <h2 *ngIf="show == 'yes'; then ifBlock; else elseBlock"></h2>
+  <br /><br />
+  <h1>Conditional rendering</h1>
+  <!-- <h2 *ngIf="show == 'yes'; then ifBlock; else elseBlock"></h2>
 <ng-template #ifBlock>
   <h2>Else Block</h2>
 </ng-template>
@@ -33,44 +35,48 @@
   <h2>Else Block</h2>
 </ng-template> -->
 
-<ng-template [ngIf]="show == 'red'">
-  <h3>Red Block</h3>
-</ng-template>
-<ng-template [ngIf]="show == 'blue'">
-  <h3>Blue Block</h3>
-</ng-template>
-<ng-template [ngIf]="show == 'green'">
-  <h3>Green Block</h3>
-</ng-template>
-<br /><br />
-<h1>Working with Switch cases</h1>
-<div [ngSwitch]="color">
-  <h3 style="color: red" *ngSwitchCase="'red'">This is the color red</h3>
-  <h3 style="color: green" *ngSwitchCase="'green'">This is the color green</h3>
-  <h3 style="color: blue" *ngSwitchCase="'blue'">This is the color blue</h3>
-  <h3 style="color: yellow" *ngSwitchCase="'yellow'">
-    This is the color yellow
-  </h3>
-  <h3 style="color: pink" *ngSwitchDefault>This is the default color</h3>
-</div>
-<br /><br />
-<h2>Get Input value</h2>
-<!-- <input type="text" (keyup)="getValue($event.target.value)" />
+  <ng-template [ngIf]="show == 'red'">
+    <h3>Red Block</h3>
+  </ng-template>
+  <ng-template [ngIf]="show == 'blue'">
+    <h3>Blue Block</h3>
+  </ng-template>
+  <ng-template [ngIf]="show == 'green'">
+    <h3>Green Block</h3>
+  </ng-template>
+  <br /><br />
+  <h1>Working with Switch cases</h1>
+  <div [ngSwitch]="color">
+    <h3 style="color: red" *ngSwitchCase="'red'">This is the color red</h3>
+    <h3 style="color: green" *ngSwitchCase="'green'">
+      This is the color green
+    </h3>
+    <h3 style="color: blue" *ngSwitchCase="'blue'">This is the color blue</h3>
+    <h3 style="color: yellow" *ngSwitchCase="'yellow'">
+      This is the color yellow
+    </h3>
+    <h3 style="color: pink" *ngSwitchDefault>This is the default color</h3>
+  </div>
+  <br /><br />
+  <h2>Get Input value</h2>
+  <!-- <input type="text" (keyup)="getValue($event.target.value)" />
 <p>My name is {{ currentVal }}</p>
 <br /><br /> -->
-<input type="text" #box />
-<button (click)="getValue(box.value)">Get Value</button>
-<p>My name is {{ currentVal }}</p>
-<br /><br />
+  <input type="text" #box />
+  <button (click)="getValue(box.value)">Get Value</button>
+  <p>My name is {{ currentVal }}</p>
+  <br /><br />
 
-<h1>Property Binding</h1>
-<input type="text" [value]="name" />
+  <h1>Property Binding</h1>
+  <input type="text" [value]="name" />
 
-<br /><br />
-<button (click)="getAlert('Krishna')">Get Alert</button>
-<br />
-<h1><u>Users module rendered in App module</u></h1>
-<app-users-list></app-users-list>
+  <br /><br />
+  <button (click)="getAlert('Krishna')">Get Alert</button>
+  <br />
+  <h1><u>Users module rendered in App module</u></h1>
+  <app-users-list></app-users-list>
 
-<app-login></app-login>
-<app-signup></app-signup>
+  <app-login></app-login>
+  <app-signup></app-signup>
+</div>
+<app-footer></app-footer>
