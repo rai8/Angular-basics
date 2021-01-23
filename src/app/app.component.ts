@@ -10,10 +10,13 @@ export class AppComponent {
   name = 'Krishna Praisley';
   show = 'green';
   color = 'saldin';
+  default = true;
   siteUrl = window.location.href; //get site url
   currentVal = '';
   //using with functions
-
+  updateColor() {
+    this.default = !this.default;
+  }
   getValue(val) {
     console.log(val);
     this.currentVal = val;

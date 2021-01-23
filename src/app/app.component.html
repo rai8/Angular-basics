@@ -69,7 +69,14 @@
 
   <h1>Property Binding</h1>
   <input type="text" [value]="name" />
-
+  <br /><br />
+  <h1>Style Binding</h1>
+  <!--   <h3 [style.color]="colorText">This is the color to be changing</h3>
+  <button (click)="updateColor()">Update color text</button> -->
+  <h3 [style.color]="default ? 'orange' : 'green'">
+    This is the color to be changing
+  </h3>
+  <button (click)="updateColor()">Update color text</button>
   <br /><br />
   <button (click)="getAlert('Krishna')">Get Alert</button>
   <br />
