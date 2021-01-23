@@ -1,1 +1,11 @@
-<p>login works!</p>
+<h1>Working with forms</h1>
+
+<form #simpleForm="ngForm" (ngSubmit)="getUsersInfo(simpleForm.value)">
+  <input type="text" ngModel name="user" placeholder="Enter username" />
+  <br /><br />
+  <input type="text" ngModel name="age" placeholder="Enter age" />
+  <br /><br />
+  <input type="text" ngModel name="address" placeholder="Enter address" />
+  <br /><br />
+  <button>Get user Info</button>
+</form>
