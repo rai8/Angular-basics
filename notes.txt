@@ -6,3 +6,12 @@ ng g c component-name
 
 //create a module 
 ng g m module-name
+
+Pipe - this is mostly used when we want to change the format 
+
+name | uppercase
+name | titlecase
+name | lowercase
+date | date
+date | date: 'fullDate'
+mmoney | currency: 'USD'
