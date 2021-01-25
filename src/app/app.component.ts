@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { UsersService } from './users.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'beginner';
+  nameData = '';
+  constructor(private user: UsersService) {
+    console.log(this.user.getData());
+    //get the data name
+    this.nameData = this.user.getData().name;
+  }
   name = 'Krishna Praisley';
   show = 'green';
   color = 'saldin';

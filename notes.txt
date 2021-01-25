@@ -19,3 +19,6 @@ mmoney | currency: 'USD'
 
 //make a directive --- used to modify or hide html elements
 ng g directive directive-name
+
+//services---- used when we want to share data between two or more componenets--- mostly used for shared data
+ng g service service-name
