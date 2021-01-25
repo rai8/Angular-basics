@@ -10,9 +10,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserCompoComponent } from './user-compo/user-compo.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, UsersListComponent, HeaderComponent, FooterComponent, UserCompoComponent, AboutComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    UsersListComponent,
+    HeaderComponent,
+    FooterComponent,
+    UserCompoComponent,
+    AboutComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, UsersModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],

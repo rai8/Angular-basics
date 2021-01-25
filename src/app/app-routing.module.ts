@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 //importing those components that need to be routed
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 //here we define the route path
 const routes: Routes = [
@@ -14,6 +15,11 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    //wildcard star routing
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ];
 
