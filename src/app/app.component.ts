@@ -7,6 +7,8 @@ import { UsersService } from './users.service';
 })
 export class AppComponent {
   title = 'beginner';
+
+  dataApi = [];
   //----- one way of doing this-------
   /*   nameData = '';
   constructor(private user: UsersService, users: UsersService) {
@@ -16,8 +18,9 @@ export class AppComponent {
   } */
   //----------fetching api from the users service------
   constructor(private user: UsersService) {
-    this.user.getApiData().subscribe((data) => {
+    this.user.getApiData().subscribe((data: []) => {
       console.log(data);
+      this.dataApi = data;
     });
   }
   name = 'Krishna Praisley';
