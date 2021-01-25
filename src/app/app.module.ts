@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CustomStyleDirective } from './custom-style.directive';
+import { HttpClientModule } from '@angular/common/http'; //this we'll import the http client module use to fetch api data
 
 @NgModule({
   declarations: [
@@ -25,7 +26,13 @@ import { CustomStyleDirective } from './custom-style.directive';
     PageNotFoundComponent,
     CustomStyleDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule, UsersModule, NgbModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    UsersModule,
+    NgbModule,
+    HttpClientModule, //we import here
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
