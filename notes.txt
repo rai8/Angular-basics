@@ -15,3 +15,7 @@ name | lowercase
 date | date
 date | date: 'fullDate'
 mmoney | currency: 'USD'
+
+
+//make a directive --- used to modify or hide html elements
+ng g directive directive-name

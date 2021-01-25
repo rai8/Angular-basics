@@ -11,6 +11,7 @@ import { UserCompoComponent } from './user-compo/user-compo.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CustomStyleDirective } from './custom-style.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AboutComponent,
     HomeComponent,
     PageNotFoundComponent,
+    CustomStyleDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, UsersModule, NgbModule],
   providers: [],
